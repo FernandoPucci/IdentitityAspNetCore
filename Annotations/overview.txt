@@ -1,0 +1,11 @@
+## CREATES AN SOLUTION AND FOLDER NAMED "OverviewIdentity"
+    dotnet new sln -n OverviewIdentity -o OverviewIdentity
+
+## CREATES ASPNET.CORE MVC APPLICATION WITH INDIVIDUAL AUTH AND ASPNET.CORE SK 2.0
+   dotnet new mvc -n Identity.Overview.Mvc --framework netcoreapp2.0 -au Individual
+
+## ADD PROJECT TO SOLUTION
+   dotnet sln add ./Identity.Overview.Mvc/Identity.Overview.Mvc.csproj
+
+## ADD MIGRATIONS
+    dotnet ef database update

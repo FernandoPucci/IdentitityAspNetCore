@@ -1,0 +1,2 @@
+## INSTALL AND RUN MSSQL-LINUX IN DOCKER
+docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=12345678910' --name SQL-Server -e 'MSSQL_PID=Express' -p 1433:1433 -d microsoft/mssql-server-linux:latest

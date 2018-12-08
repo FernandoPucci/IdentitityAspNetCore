@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/Overview/OverviewIdentity/Identity.Overview.Mvc/Identity.Overview.Mvc.csproj"
+            ],
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}
